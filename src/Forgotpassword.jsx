@@ -10,6 +10,7 @@ function Forgotpassword() {
   const [reTypeNewPassword, setreTypeNewPassword] = useState("");
   async function updatePassword() {
     var onlygmail = "@gmail.com";
+    // console.log();
     var end = email.length + 1;
     var start = end - 1 - onlygmail.length;
     if (email == "" || email.substring(start, end) != onlygmail) {
